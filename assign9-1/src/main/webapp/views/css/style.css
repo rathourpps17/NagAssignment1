@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-wrapper{
+    width: 100%;
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.site-navbar{
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+    180deg,
+    rgba(173, 173, 240,1),
+    rgba(173, 173, 240,0.8),
+    rgba(173, 173, 240,0.5),
+    rgba(173, 173, 240,0)
+    );
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+}
+.navbar-contents{
+    text-align: center;
+    
+}
+.site-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    background: linear-gradient(
+    0deg,
+    rgba(173, 173, 240,1),
+    rgba(173, 173, 240,0)
+    );
+    
+    padding-top: 30px !important;
+    padding-bottom: 5px !important
+}
+.footer-contents{
+    text-align: center;
+ 
+}
+.form-wrapper{
+    position: relative;
+    border:2px solid rgb(228, 228, 228);   
+    padding: 2em 3.3em;
+    border-radius:8px ;
+    }
+    .form-wrapper  h1 {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 18px;
+        line-height: 1;
+        margin: -9px 0 0; 
+        background: #fff;
+        padding: 0 3px;
+        color: blueviolet;
+      }
+.form-group{
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+}
+label{
+    padding: 0.2em;
+    white-space: nowrap;
+    background-color:rgb(219, 219, 219);
+    color: black;
+    
+}
+input{
+    width: 270px !important;
+}
+.btn-submit{
+    margin-left: calc(50% - 34px) !important;
+    border: 1px solid rgba(173, 173, 240,1);
+    padding: 0.2em 1em;
+    background-color: none;
+    border-radius: 6px;
+    z-index: 99;
+    -webkit-box-shadow: 0px 0px 2px 1px #000000; 
+box-shadow: 0px 0px 2px 1px #000000;
+}
+@media screen and (max-width: 480px) {
+    input{
+        width: 160px !important;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    input{
+        width: 100% !important;
+    }
+    .form-group{
+        display: block;
+        justify-content: none; 
+        gap: none; 
+      }
+  }
