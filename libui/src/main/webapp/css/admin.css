@@ -1,0 +1,119 @@
+@charset "ISO-8859-1";
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-wrapper{
+    width: 100%;
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   
+}
+.site-navbar{
+    background-color: white;
+     display: grid;
+    grid-template-columns:  auto auto auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+    180deg,
+    rgba(173, 173, 240,1),
+    rgba(173, 173, 240,0.8),
+    rgba(173, 173, 240,0.5),
+    rgba(173, 173, 240,0)
+    );
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid rgb(68, 37, 207);
+}
+.logoutBtn{
+    background: transparent;
+}
+.navbar-contents{
+    text-align: center;
+    
+}
+.site-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    background: linear-gradient(
+    0deg,
+    rgba(173, 173, 240,1),
+    rgba(173, 173, 240,0)
+    );
+    
+    padding-top: 30px !important;
+    padding-bottom: 5px !important;
+    border-top:1px solid rgb(68, 37, 207)
+}
+.footer-contents{
+    text-align: center;
+ 
+}
+.table-wrapper{
+ width:calc(100% -  30px);   
+ margin: 0 auto;
+ margin-top: 30vh;
+ height: 50vh;
+ overflow-y: scroll;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  .table-header{
+      width: 100%;
+   display: grid;
+   grid-template-columns: auto auto auto ;
+
+  }
+  .it2{
+      display: flex;
+      justify-content: center;
+    align-items: center;
+}
+.it3{
+    display: flex;
+    justify-content: right;
+  align-items: center;
+  margin-right: 1em;
+}
+  .addBtn{
+      font-size: medium;
+      
+  }
+  .lst-colm{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+@media screen and (max-width: 480px) {
+    input{
+        width: 160px !important;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    input{
+        width: 100% !important;
+    }
+    .form-group{
+        display: block;
+        justify-content: none; 
+        gap: none; 
+      }
+  }
